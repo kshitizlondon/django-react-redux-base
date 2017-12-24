@@ -144,6 +144,9 @@ Backend (django/python tests)
 
 * `$ ./scripts/test_local_backend.sh`
 
+if error:
+`pip install 'pylint>=1.7,<1.8'`
+
 Please take into account that test_local_backend.sh runs py.test with `--nomigrations --reuse-db` flags to allow it be performant. Any time you add a migration please remove those flags next time you run the script.
 
 ### Static analysis
